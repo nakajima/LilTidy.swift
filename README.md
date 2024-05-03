@@ -1,6 +1,6 @@
 # LilTidy
 
-A tiny wrapper around tidy-html5. (the https://github.com/GerHobbelt/tidy-html5 fork which includes some fixes that aren't in the main repo).
+A tiny wrapper around tidy-html5 (the https://github.com/GerHobbelt/tidy-html5 fork which includes some fixes that aren't in the main repo).
 
 ## Usage
 
@@ -12,5 +12,5 @@ let cleaned = try LilTidy.clean("<dIV>sup</Div>", options: [
   "vertical-space": "auto"
 ])
 
-XCTAssertEqual("<div>sup</div>\n", cleaned) # Passes! Probably!
+XCTAssertEqual("<div>sup</div>\n", cleaned) // Passes! Probably!
 ```
