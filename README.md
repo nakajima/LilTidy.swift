@@ -1,6 +1,6 @@
 # LilTidy
 
-A tiny wrapper around tidy-html5 (the https://github.com/GerHobbelt/tidy-html5 fork which includes some fixes that aren't in the main repo).
+A tiny wrapper around tidy-html5 (the https://github.com/nakajima/tidy-html5 fork which includes some fixes that aren't in the main repo).
 
 ## Usage
 
