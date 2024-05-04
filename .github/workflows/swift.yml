@@ -19,6 +19,8 @@ jobs:
       with:
         xcode-version: "15.3"
     - uses: actions/checkout@v4
+      with:
+        submodules: recursive
     - name: Build
       run: swift build -v
     - name: Run tests
