@@ -17,24 +17,31 @@ final class LilTidyTests: XCTestCase {
 		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 		<html>
 		<body>
+		<pre>
+		<code>
 		func sup() {
 			return
 		}
+		</code>
+		</pre>
 		</body>
 		"""
 
 		let cleaned = try LilTidy.clean(html, options: [
-			"indent": "no",
 			"output-html": "yes",
-			"doctype": "omit",
 			"show-body-only": "yes",
-			"vertical-space": "auto"
+			"keep-tabs": "yes"
 		])
 
 		XCTAssertEqual("""
+		<pre>
+		<code>
 		func sup() {
 			return
 		}
+		</code>
+		</pre>
+
 		""", cleaned)
 	}
 }
