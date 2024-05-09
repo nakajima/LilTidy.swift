@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: swift-actions/setup-swift
+    - uses: swift-actions/setup-swift@latest
       with:
         swift-version: "5.10"
     - uses: actions/checkout@v4
